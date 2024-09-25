@@ -4,5 +4,13 @@ module.exports = {
     './app/helpers/**/*.rb',
     './app/assets/stylesheets/**/*.css',
     './app/javascript/**/*.js'
-  ]
+  ],
+  theme: {
+    extend: {
+      fontSize: {
+        sm: "2rem",
+      },
+    },
+  },
+  plugins: [],
 }
