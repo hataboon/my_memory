@@ -1,85 +1,107 @@
-<div class="font-patrick">私のエモいアプリ</div>
-<div class="profile p-6 bg-white shadow-md rounded-lg text-gray-700">
-  <p class="text-lg font-bold">名前：　畑中　崇徳（はたなか　たかのり）</p>
-  <p>RUNTEQペンネーム：　hatabo_56a（はたぼー）</p>
-  <p>趣味：　NBA観戦、ゴルフ、ワンピースカード、ピクニック</p>
-  <p>好きな一言：　諦めんかったら道は拓ける</p>
-  <p>好きな食べ物：　ハンバーグ、から揚げ、チョコ</p>
-  <p>
-</div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>私の自己紹介アプリ</title>
+  <link rel="stylesheet" href="/assets/application.css">
+</head>
 
-<div class="memory mt-6 bg-white shadow-md rounded-lg text-gray-700">
-<h2 class="text-xl sm:text-2xl md:text-4xl font-semibold">おもいで</h2>
-  <div class="memory-list">
+<body class="bg-gray-100">
+  <!-- 全体を中央に寄せるためのコンテナ -->
+  <div class="container mx-auto max-w-3xl p-6">
 
-  <details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg">
-  <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">もう一度行ってみたい場所は？</summary>
-  <div class="mx-12 pb-8">
-    <p>ハワイのビーチ。美しい海とリラックスできる時間が最高でした。</p>
+    <!-- タイトル -->
+    <div class="text-center text-4xl mb-8 text-blue-700">
+      私の自己紹介アプリ
+    </div>
+
+    <p class="text-center text-lg mb-8 text-gray-600">
+      ご覧いただきありがとうございます。<br>
+      少しでも私のことを知ってもらえたら嬉しいです。<br>
+      このアプリでは、私の『思い出』とともに自己紹介をしていますので、どうぞ気軽にご覧ください。
+    </p>
+
+
+    <!-- プロフィールセクション -->
+    <div class="profile p-6 bg-white shadow-md rounded-lg text-gray-700 leading-relaxed">
+      <p class="text-lg font-bold mb-4">名前：　畑中　崇徳（はたなか　たかのり）</p>
+      <p>年齢：　３１歳</p>
+      <p>住居：　大阪</p>
+      <p>職業：　専業主夫（前職：公務員）</p>
+      <p>構成：　私、妻、長女（３歳）、次女（２歳）</p>
+      <p>性格：　忍耐強い、楽観的</p>
+      <p>RUNTEQペンネーム：　hatabo_56a（はたぼー）</p>
+      <p>趣味：　NBA観戦、ゴルフ、ワンピースカード、ピクニック</p>
+      <p>好きな一言：　諦めんかったら道は拓ける</p>
+      <p>好きな食べ物：　ハンバーグ、から揚げ、チョコ</p>
+      <p>夢：　プールとバスケットコート付きの別荘で家族と楽しむ</p>
+      <p>夢：　４７都道府県観光（現在２０程は行ってるかな）</p>
+    </div>
+
+    <!-- おもいでセクション -->
+    <div class="memory mt-8 bg-gray-100 shadow-lg rounded-lg p-6">
+      <h2 class="text-3xl font-semibold text-center text-blue-600 mb-6">おもいで</h2>
+      <div class="memory-list">
+        <!-- 質問詳細 -->
+        <details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
+          <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">
+            今までで一番感動した瞬間は？
+          </summary>
+          <div class="mx-12 pb-8">
+            <p>前職の公務員の仕事で昇任試験に合格したときかな！</p>
+            <p>２年連続で落ちて３年目に合格できたときは嬉しかった🥲</p>
+          </div>
+        </details>
+
+        <details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg">
+          <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">
+            もう一度行ってみたい場所は？
+          </summary>
+          <div class="mx-12 pb-8">
+            <p>ロサンゼルス州サンタモニカのロブスターをもう一回食べに行きたい🦐</p>
+          </div>
+        </details>
+
+        <details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
+          <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">
+            一番好きな季節は？
+          </summary>
+          <div class="mx-12 pb-8">
+            <p>秋。金木犀の匂い大好き。</p>
+          </div>
+        </details>
+
+        <details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
+          <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">
+            学生時代の一番の思い出は？
+          </summary>
+          <div class="mx-12 pb-8">
+            <p>奨学金のお金で毎晩カラオケ、居酒屋、ボウリング、ダーツをしてた日々（笑）</p>
+            <p>そん時は後先のことなんも考えてなかったな～。なんか勉強しときゃ良かった</p>
+          </div>
+        </details>
+
+        <details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
+          <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">
+            あの頃に戻れたらいつ？
+          </summary>
+          <div class="mx-12 pb-8">
+            <p>高校が男子校やったんで、受験をもっと頑張りたかって共学に行きたかった。</p>
+            <p>あと将来やりたいことをこの時期に見つけたかった。</p>
+          </div>
+        </details>
+
+        <details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
+          <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">
+            自分を動物に例えると何？
+          </summary>
+          <div class="mx-12 pb-8">
+            <p>犬🐶。忠誠心が強いから！？</p>
+          </div>
+        </details>
+      </div>
+    </div>
   </div>
-</details>
-
-<details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
-  <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">今までの人生で一番驚いたことは？</summary>
-  <div class="mx-12 pb-8">
-    <p>突然のサプライズパーティー！全く予想していなかったので、本当に驚きました。</p>
-  </div>
-</details>
-
-<details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
-  <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">一番感動した映画や本は？</summary>
-  <div class="mx-12 pb-8">
-    <p>「ショーシャンクの空に」。人間の希望と強さに感動しました。</p>
-  </div>
-</details>
-
-<details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
-  <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">将来叶えたい夢は？</summary>
-  <div class="mx-12 pb-8">
-    <p>自分のカフェを開くこと。リラックスできる空間を作りたいです。</p>
-  </div>
-</details>
-
-<details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
-  <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">学生時代で一番の思い出は？</summary>
-  <div class="mx-12 pb-8">
-    <p>大学のサークルで全国大会に出場したこと！みんなで頑張って達成感がありました。</p>
-  </div>
-</details>
-
-<details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
-  <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">タイムマシンがあったらどの時代に行ってみたい？</summary>
-  <div class="mx-12 pb-8">
-    <p>未来の100年後。どんな技術が発展しているか見てみたいです。</p>
-  </div>
-</details>
-
-<details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
-  <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">人生で一番影響を受けた人は誰？</summary>
-  <div class="mx-12 pb-8">
-    <p>私の祖父です。とても忍耐強く、いつも家族のために頑張っていた姿に影響を受けました。</p>
-  </div>
-</details>
-
-<details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
-  <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">何か新しい趣味を始めるとしたら、何をやりたい？</summary>
-  <div class="mx-12 pb-8">
-    <p>陶芸。自分の作品を作る楽しさに興味があります。</p>
-  </div>
-</details>
-
-<details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
-  <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">好きな食べ物ベスト3を教えて！</summary>
-  <div class="mx-12 pb-8">
-    <p>1. お寿司 2. ピザ 3. チョコレート</p>
-  </div>
-</details>
-
-<details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
-  <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">好きな場所でリモートワークできるなら、どこで働きたい？</summary>
-  <div class="mx-12 pb-8">
-    <p>バリ島の海辺。自然を感じながら、リラックスした環境で働きたいです。</p>
-  </div>
-</details>
-
-</div>
+</body>
+</html>

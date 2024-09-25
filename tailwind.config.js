@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        patrick: ['Patrick Hand', 'cursive'], // Patrick Hand フォントを登録
+      },
       fontSize: {
         sm: "2rem",
       },
