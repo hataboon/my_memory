@@ -7,11 +7,18 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- OGPタグを追加 -->
+    <meta property="og:title" content="私の自己紹介アプリ" />
+    <meta property="og:description" content="私の自己紹介アプリです！" />
+    <!-- できれば、OGP用の大きな画像を用意 -->
+    <meta property="og:image" content="<%= asset_path 'favicon.png' %>" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:type" content="website" />
+
     <%= yield :head %>
 
-   
-<link rel="icon" href="<%= asset_path 'favicon.png' %>" type="image/png">
-<link rel="shortcut icon" href="<%= asset_path 'favicon.png' %>" type="image/png">
+    <link rel="icon" href="<%= asset_path 'favicon.png' %>" type="image/png">
+    <link rel="shortcut icon" href="<%= asset_path 'favicon.png' %>" type="image/png">
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
