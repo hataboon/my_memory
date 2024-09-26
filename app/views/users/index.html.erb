@@ -24,19 +24,28 @@
 
 
     <!-- プロフィールセクション -->
-    <div class="profile p-6 bg-white shadow-md rounded-lg text-gray-700 leading-relaxed">
-      <p class="text-lg font-bold mb-4">名前：　畑中　崇徳（はたなか　たかのり）</p>
-      <p>年齢：　３１歳</p>
-      <p>住居：　大阪</p>
-      <p>職業：　専業主夫（前職：公務員）</p>
-      <p>構成：　私、妻、長女（３歳）、次女（２歳）</p>
-      <p>性格：　忍耐強い、楽観的</p>
-      <p>RUNTEQペンネーム：　hatabo_56a（はたぼー）</p>
-      <p>趣味：　NBA観戦、ゴルフ、ワンピースカード、ピクニック</p>
-      <p>好きな一言：　諦めんかったら道は拓ける</p>
-      <p>好きな食べ物：　ハンバーグ、から揚げ、チョコ</p>
-      <p>夢：　プールとバスケットコート付きの別荘で家族と楽しむ</p>
-      <p>夢：　４７都道府県観光（現在２０程は行ってるかな）</p>
+    <div class="flex justify-between items-start p-6 bg-white shadow-md rounded-lg text-gray-700 leading-relaxed">
+
+      <div class="flex-1">
+        <p class="text-lg font-bold mb-4">名前：　畑中　崇徳（はたなか　たかのり）</p>
+        <p>年齢：　３１歳</p>
+        <p>住居：　大阪</p>
+        <p>職業：　専業主夫（前職：ポリス）</p>
+        <p>構成：　私、妻、長女（３歳）、次女（２歳）</p>
+        <p>性格：　忍耐強い、楽観的</p>
+        <p>RUNTEQペンネーム：　hatabo_56a（はたぼー）</p>
+        <p>趣味：　NBA観戦、ゴルフ、ワンピースカード、ピクニック</p>
+        <p>好きな一言：　諦めんかったら道は拓ける</p>
+        <p>好きな食べ物：　ハンバーグ、から揚げ、チョコ</p>
+        <p>夢：　プールとバスケットコート付きの別荘で家族と楽しむ</p>
+        <p>夢：　４７都道府県観光（現在２０程は行ってるかな）</p>
+      </div>
+      <div class="ml-6">
+        <!-- 写真1 -->
+        <img src="/assets/memory6.png" alt="写真1" class="rounded-lg shadow-md mb-4 w-48">
+        <!-- 写真2 -->
+        <img src="/assets/memory5.png" alt="写真2" class="rounded-lg shadow-md w-48">
+      </div>
     </div>
 
     <!-- おもいでセクション -->
@@ -49,8 +58,10 @@
             今までで一番感動した瞬間は？
           </summary>
           <div class="mx-12 pb-8">
-            <p>前職の公務員の仕事上で昇任試験に合格したときかな！</p>
-            <p>２年連続で落ちて３年目に合格できたときは嬉しかった🥲</p>
+            <p>初めて自分の子供の顔を見たとき👶</p>
+            <p>自分の子供を言葉で表現するのが難しく、まだ父親としての実感が湧いてませんでした。</p>
+            <p>想像以上に小さかった。</p>
+            <%= image_tag 'memory4.png', alt: '写真', class: 'mt-2 rounded-sm shadow-md', width: '50%' %>
           </div>
         </details>
 
@@ -60,8 +71,28 @@
           </summary>
           <div class="mx-12 pb-8">
             <p>ロサンゼルス州サンタモニカのロブスターをもう一回食べに行きたい🦐</p>
-            <%= image_tag 'memory2.jpg', alt: '別のサンタモニカの写真', class: 'mt-2 rounded-sm shadow-md' %>
-            <%= image_tag 'memory1.jpg', alt: 'サンタモニカのロブスター', class: 'mt-2 rounded-lg shadow-md' %>
+            <%= image_tag 'memory2.jpg', alt: '別のサンタモニカの写真', class: 'mt-2 rounded-sm shadow-md', width: '50%' %>
+            <%= image_tag 'memory1.jpg', alt: 'サンタモニカのロブスター', class: 'mt-2 rounded-lg shadow-md', width: '50%' %>
+          </div>
+        </details>
+
+        <details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
+          <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">
+            困難を乗り越えた経験は？
+          </summary>
+          <div class="mx-12 pb-8">
+            <p>前職の公務員の仕事上で昇任試験に合格したときかな！</p>
+            <p>２年連続で落ちても、諦めずに毎日勉強して３年目に合格できたときは嬉しかった🥲</p>
+          </div>
+        </details>
+
+        <details class="hover:bg-gray-50 transition duration-200 rounded-md hover:shadow-lg mt-4">
+          <summary class="py-6 px-4 text-2xl font-semibold w-full cursor-pointer marker:text-blue-500 list-none">
+            一番達成感を感じた瞬間は？
+          </summary>
+          <div class="mx-12 pb-8">
+            <p>仕事上において水難救助隊になるための訓練で何度も溺れかけましたが、何とか死線を乗り越えて晴れて部隊の一員になれたこと</p>
+            <p>ゴーグル、シュノーケルのありがたみは忘れません</p>
           </div>
         </details>
 
@@ -81,7 +112,7 @@
           <div class="mx-12 pb-8">
             <p>奨学金のお金で毎晩カラオケ、居酒屋、ボウリング、ダーツをしてた日々（笑）</p>
             <p>そん時は後先のことなんも考えてなかったな～。なんか勉強しときゃ良かった</p>
-            <%= image_tag 'memory3.png', alt: 'バスケサークルでの活動', class: 'mt-2 rounded-sm shadow-md' %>
+            <%= image_tag 'memory3.png', alt: 'バスケサークルでの活動', class: 'mt-2 rounded-sm shadow-md', width: '50%' %>
           </div>
         </details>
 
